@@ -1,11 +1,12 @@
 'use strict';
 
-var lodash = require('lodash');
+var lodashEs = require('lodash-es');
 
 const sum = (a, b) => {
   {
-    console.log(lodash.kebabCase('foo bar'));
+    console.log(lodashEs.kebabCase('foo bar'));
   }
+
   return a + b;
 };
 

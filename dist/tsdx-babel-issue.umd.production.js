@@ -1,11 +1,11 @@
-!(function(e, o) {
+!(function(e, s) {
   'object' == typeof exports && 'undefined' != typeof module
-    ? o(exports, require('lodash'))
+    ? s(exports, require('lodash-es'))
     : 'function' == typeof define && define.amd
-    ? define(['exports', 'lodash'], o)
-    : ((e = e || self), o((e['tsdx-babel-issue'] = {}), e.lodash));
-})(this, function(e, o) {
+    ? define(['exports', 'lodash-es'], s)
+    : ((e = e || self), s((e['tsdx-babel-issue'] = {}), e.lodashEs));
+})(this, function(e, s) {
   'use strict';
-  e.sum = (e, o) => e + o;
+  e.sum = (e, s) => e + s;
 });
 //# sourceMappingURL=tsdx-babel-issue.umd.production.js.map

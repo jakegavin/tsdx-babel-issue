@@ -1,17 +1,18 @@
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
-    ? factory(exports, require('lodash'))
+    ? factory(exports, require('lodash-es'))
     : typeof define === 'function' && define.amd
-    ? define(['exports', 'lodash'], factory)
+    ? define(['exports', 'lodash-es'], factory)
     : ((global = global || self),
-      factory((global['tsdx-babel-issue'] = {}), global.lodash));
-})(this, function(exports, lodash) {
+      factory((global['tsdx-babel-issue'] = {}), global.lodashEs));
+})(this, function(exports, lodashEs) {
   'use strict';
 
   const sum = (a, b) => {
     {
-      console.log(lodash.kebabCase('foo bar'));
+      console.log(lodashEs.kebabCase('foo bar'));
     }
+
     return a + b;
   };
 
